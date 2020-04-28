@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 366460354}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1362794633}
+        m_MethodName: Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &366460354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +405,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 457743847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1087163567}
+        m_MethodName: Cure
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &457743847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +714,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 681412256}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1362794633}
+        m_MethodName: Cure
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &681412256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +920,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1087163566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012979649092, guid: 9c8e6b52a146b2d4994f42592a19bba0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1773025583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1087163567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087163566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d8b007eb9b73d41bc0587d941993f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: 300
+  atk: 10
+  cure: 20
+  message: {fileID: 1105766885}
+  bat: {fileID: 1362794633}
 --- !u!1 &1105766883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8759\u8760\u653B\u64CA"
+  m_Text: "\u53F2\u840A\u59C6\u653B\u64CA"
 --- !u!222 &1150720061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1211,6 +1267,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348530399}
   m_CullTransparentMesh: 0
+--- !u!1 &1362794632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012081666484, guid: a300b93764f24c94b9ddb3445d906548,
+    type: 3}
+  m_PrefabInstance: {fileID: 407480919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1362794633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362794632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a658ae03d78091b47930d17c59632d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blood: 200
+  atk: 30
+  cure: 10
+  message: {fileID: 1105766885}
+  slime: {fileID: 1087163567}
 --- !u!1001 &1773025583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1366,7 +1445,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1864469991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1087163567}
+        m_MethodName: Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1864469991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1471,7 +1561,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8759\u8760\u88DC\u8840"
+  m_Text: "\u53F2\u840A\u59C6\u88DC\u8840"
 --- !u!222 &1881509295
 CanvasRenderer:
   m_ObjectHideFlags: 0
