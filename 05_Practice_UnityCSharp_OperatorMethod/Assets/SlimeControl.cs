@@ -28,8 +28,8 @@ public class SlimeControl : MonoBehaviour
     public void Injure(int inj)
     {
         blood = blood - inj;
-        message.text = gameObject.name + " - 受到傷害：" + inj + "\n"
-                     + gameObject.name + " - 血量剩下：" + blood;
+        message.text = "<color=#94A013>" + gameObject.name + "</color>" + " - 受到傷害：" + inj + "\n"
+                     + "<color=#94A013>" + gameObject.name + "</color>" + " - 血量剩下：" + blood;
     }
 
     /// <summary>
@@ -38,7 +38,7 @@ public class SlimeControl : MonoBehaviour
     public void Cure()
     {
         blood += cure;
-        message.text = gameObject.name + " - 收到治癒：" + cure + "\n"
-                     + gameObject.name + " - 血量剩下：" + blood;
+        message.text = "<color=#94A013>" + gameObject.name + "</color>" + " - 收到治癒：" + cure + "\n"
+                     + "<color=#94A013>" + gameObject.name + "</color>" + " - 血量剩下：" + blood;
     }
 }
